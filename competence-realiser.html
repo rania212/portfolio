@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Réaliser un développement d’application - Portfolio de Rania</title>
+  <link rel="stylesheet" href="competences.css">
+  <style>
+    html, body { height: 100%; margin: 0; padding: 0; }
+    body { background: #f9fafd; font-family: 'Segoe UI', Arial, sans-serif; color: #222; margin: 0; min-height: 100vh; overflow-x: hidden; }
+    .container { max-width: 900px; margin: 3rem auto; background: #fff; border-radius: 18px; box-shadow: 0 4px 24px rgba(74,144,226,0.10); padding: 2.5rem 2rem; min-height: 100vh; box-sizing: border-box; }
+    h1 { color: #357ABD; font-size: 2em; margin-top: 0; }
+    .back-link { color: #4A90E2; text-decoration: none; font-weight: 600; margin-bottom: 2rem; display: inline-block; }
+    .back-link:hover { text-decoration: underline; }
+    .projet-card { background: #f7fbff; border-radius: 12px; box-shadow: 0 2px 8px rgba(74,144,226,0.07); padding: 1.2rem 1rem; margin-bottom: 1.5rem; }
+    .projet-card h2 { margin-top: 0; color: #357ABD; font-size: 1.2em; }
+    .projet-card ul { margin: 0.5em 0 0 1.2em; }
+    .projet-tags-inline {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5em;
+      margin-top: 1.2em;
+      align-items: center;
+      justify-content: center;
+    }
+    hr { border:none; border-top:2px solid #e3eaf3; margin:2.5em 0; }
+    .projet-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 2rem;
+    }
+    .projet-info { flex: 2; }
+    .projet-tags {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 0.7em;
+      min-width: 120px;
+    }
+    .tag {
+      display: inline-block;
+      background: #eaf3fa;
+      color: #357ABD;
+      border-radius: 16px;
+      padding: 0.4em 1em;
+      font-size: 1em;
+      font-weight: 600;
+      margin-bottom: 0.3em;
+      box-shadow: 0 1px 4px rgba(74,144,226,0.07);
+    }
+    .tag-php { background: #777bb3; color: #fff; }
+    .tag-js { background: #ffe082; color: #222; }
+    .tag-html { background: #e44d26; color: #fff; }
+    .tag-css { background: #2965f1; color: #fff; }
+    .tag-python { background: #306998; color: #fff; }
+    .niveau {
+      display: inline-block;
+      background: #f7fbff;
+      color: #357ABD;
+      border-radius: 16px;
+      padding: 0.4em 1em;
+      font-size: 0.98em;
+      font-weight: 500;
+      margin-top: 0.5em;
+      box-shadow: 0 1px 4px rgba(74,144,226,0.07);
+    }
+    @media (max-width: 700px) {
+      .projet-flex { flex-direction: column; align-items: stretch; }
+      .projet-tags { align-items: flex-start; margin-top: 1em; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="portfolio.html#competences" class="back-link">← Retour aux compétences</a>
+    <!-- Exemple de projet à dupliquer/modifier -->
+    <div class="projet-card projet-flex">
+      <div class="projet-info">
+        <h2>Développement d’une application web de gestion de collection de jeux de société</h2>
+        <ul>
+          <li><b>Projet :</b> Ce projet, réalisé en groupe de six, avait pour objectif de transformer un fichier Excel désorganisé contenant près de 17 000 jeux de société en une application web fonctionnelle permettant de consulter, rechercher et gérer cet inventaire via une base de données relationnelle.</li>
+          <li><b>Période :</b> Projet réalisé en 2<sup>ème</sup> année de BUT Informatique, novembre 2024.</li>
+          <li><b>Lien :</b> <a href="https://github.com/AhashPARTHIPAN/SAE3.01-Developpement-d-une-application" target="_blank">Voir le projet sur GitHub</a></li>
+        </ul>
+        <h3 style="margin-bottom:0.3em;">Ce que j’ai fait</h3>
+        <p>Je me suis concentrée sur la partie développement, à la fois front-end et back-end. J’ai conçu et développé des pages dynamiques en PHP pour afficher les jeux, gérer les filtres de recherche et permettre les modifications côté utilisateur. J’ai également implémenté la logique de requêtes SQL pour interagir avec la base de données, en veillant à optimiser les performances et à sécuriser les entrées. J’ai travaillé sur la mise en place de la pagination, la gestion des droits d’accès selon les rôles utilisateurs, ainsi que sur des fonctionnalités spécifiques comme l’ajout ou la modification d’un jeu dans l’inventaire.</p>
+        <h3 style="margin-bottom:0.3em;">Ce que j’ai appris</h3>
+        <p>Ce projet m’a permis de renforcer mes compétences en développement web, notamment dans la manière de structurer un projet en respectant le modèle MVC. J’ai appris concrètement comment séparer les responsabilités entre le modèle (la base de données et sa logique d’accès), la vue (l’affichage des données à l’utilisateur) et le contrôleur (le traitement des actions et la communication entre le modèle et la vue). Cela m’a permis de développer un code plus propre, plus maintenable et évolutif. J’ai également gagné en autonomie dans la gestion d’un projet web, en précision dans le débogage, et en efficacité dans l’écriture de requêtes SQL complexes.</p>
+        <h3 style="margin-bottom:0.3em;">Difficultés rencontrées et solutions mises en place</h3>
+        <p>L’une des principales difficultés a été l’intégration entre le front-end et le back-end, notamment pour le traitement des formulaires et l’affichage dynamique des résultats. Pour y faire face, j’ai mis en place des tests manuels réguliers, ajouté des messages d’erreur explicites côté serveur, et retravaillé le traitement des données pour assurer leur cohérence tout au long du cycle de vie de l’application. J’ai également amélioré l’organisation du code en respectant le découpage MVC, ce qui a facilité la maintenance collective du projet.</p>
+        <div class="projet-tags-inline">
+          <span style="font-weight:600;margin-right:0.7em;">Compétence :</span>
+          <span class="tag tag-php">PHP</span>
+          <span class="tag tag-js">JavaScript</span>
+          <span class="tag tag-html">HTML</span>
+          <span class="tag tag-css">CSS</span>
+          <span class="niveau">Niveau : ★★★★☆</span>
+        </div>
+      </div>
+    </div>
+    <hr style="border:none;border-top:2px solid #e3eaf3;margin:2.5em 0;">
+    <div class="projet-card projet-flex">
+      <div class="projet-info">
+        <h2>Calcul de trajets en Python</h2>
+        <ul>
+          <li><b>Projet :</b> Développement d’un programme permettant de calculer et optimiser des itinéraires entre plusieurs villes en binôme.</li>
+          <li><b>Période :</b> Projet réalisé en 1<sup>ère</sup> année de BUT Informatique, octobre 2023.</li>
+        </ul>
+        <h3 style="margin-bottom:0.3em;">Ce que j’ai fait</h3>
+        <p>J’ai développé des fonctions complexes en Python pour gérer le calcul des distances et l’optimisation des parcours, tout en assurant la gestion des entrées utilisateurs. J’ai également documenté le code de manière claire et réalisé des tests unitaires pour garantir la fiabilité du programme. Ce projet s’est fait en binôme, ce qui a impliqué une collaboration étroite et une communication régulière.</p>
+        <h3 style="margin-bottom:0.3em;">Ce que j’ai appris</h3>
+        <p>Cette expérience m’a permis de renforcer mes compétences en programmation Python, notamment dans la conception d’algorithmes complexes. J’ai amélioré ma capacité à structurer un code clair et efficace, ainsi qu’à documenter et tester rigoureusement mes solutions techniques. Le travail en binôme a développé mes aptitudes à collaborer, communiquer et organiser le travail en équipe.</p>
+        <h3 style="margin-bottom:0.3em;">Difficultés rencontrées et solutions mises en place</h3>
+        <p>La principale difficulté a été de gérer la complexité des fonctions d’optimisation et d’assurer leur fiabilité. Pour y faire face, j’ai adopté une méthode de développement avec des tests fréquents et des validations régulières, ce qui a permis d’améliorer la robustesse du code et ma méthodologie de travail.</p>
+        <div class="projet-tags-inline">
+          <span style="font-weight:600;margin-right:0.7em;">Compétence :</span>
+          <span class="tag tag-python">Python</span>
+          <span class="niveau">Niveau : ★★★☆☆</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
