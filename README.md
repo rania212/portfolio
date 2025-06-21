@@ -16,7 +16,6 @@ Bienvenue sur mon portfolio web !
 ## Technologies utilisées
 - HTML5 / CSS3
 - Responsive Design
-- (Possibilité d’ajouter JavaScript, PHP, etc. si pertinent)
 
 ## Me contacter
 - 📧 raniabousf@gmail.com
@@ -24,7 +23,7 @@ Bienvenue sur mon portfolio web !
 - 💼 [LinkedIn](https://www.linkedin.com/in/rania-bousfiha-b05393273?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app)
 
 ## Remarques
-N’hésitez pas à me contacter pour toute question, opportunité de stage ou d’alternance !
+N’hésitez pas à me contacter pour toute question, opportunité d’alternance !
 
 ---
 
