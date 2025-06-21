@@ -6,7 +6,7 @@ Bienvenue sur mon portfolio web !
 Étudiante en 2ème année de BUT Informatique, je vous propose de découvrir à travers ce site mes compétences, mes projets, mon parcours et mes expériences professionnelles. Ce portfolio a été conçu pour valoriser mon savoir-faire, mon évolution et ma personnalité auprès des recruteurs et professionnels du secteur IT.
 
 ## Accéder au portfolio en ligne
-👉 [Lien à compléter une fois le site publié sur GitHub Pages ou Netlify]
+https://rania212.github.io/portfolio/
 
 ## Structure du portfolio
 - **Accueil** : Présentation, compétences, conseils professionnels, contact
