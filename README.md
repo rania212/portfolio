@@ -6,7 +6,7 @@ Bienvenue sur mon portfolio web !
 Étudiante en 2ème année de BUT Informatique, je vous propose de découvrir à travers ce site mes compétences, mes projets, mon parcours et mes expériences professionnelles. Ce portfolio a été conçu pour valoriser mon savoir-faire, mon évolution et ma personnalité auprès des recruteurs et professionnels du secteur IT.
 
 ## Accéder au portfolio en ligne
-👉 [Lien à compléter une fois le site publié sur GitHub Pages ou Netlify]
+https://rania212.github.io/portfolio/
 
 ## Structure du portfolio
 - **Accueil** : Présentation, compétences, conseils professionnels, contact
@@ -16,7 +16,6 @@ Bienvenue sur mon portfolio web !
 ## Technologies utilisées
 - HTML5 / CSS3
 - Responsive Design
-- (Possibilité d’ajouter JavaScript, PHP, etc. si pertinent)
 
 ## Me contacter
 - 📧 raniabousf@gmail.com
@@ -24,7 +23,7 @@ Bienvenue sur mon portfolio web !
 - 💼 [LinkedIn](https://www.linkedin.com/in/rania-bousfiha-b05393273?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app)
 
 ## Remarques
-N’hésitez pas à me contacter pour toute question, opportunité de stage ou d’alternance !
+N’hésitez pas à me contacter pour toute question, opportunité d’alternance !
 
 ---
 
