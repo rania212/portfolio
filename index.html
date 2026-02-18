@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,11 +13,14 @@
       color: #222;
       min-height: 100vh;
     }
+
     nav {
       position: fixed;
-      top: 0; left: 0; right: 0;
-      background: rgba(255,255,255,0.95);
-      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      top: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.95);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
       z-index: 10;
       display: flex;
       justify-content: center;
@@ -26,10 +30,19 @@
       border-bottom: 2px solid #e3eaf3;
       animation: fadeInDown 1s;
     }
+
     @keyframes fadeInDown {
-      from { transform: translateY(-40px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
+      from {
+        transform: translateY(-40px);
+        opacity: 0;
+      }
+
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
     }
+
     nav a {
       color: #4A90E2;
       font-weight: 600;
@@ -38,10 +51,12 @@
       padding-bottom: 2px;
       border-bottom: 2px solid transparent;
     }
+
     nav a:hover {
       color: #222;
       border-bottom: 2px solid #357ABD;
     }
+
     header {
       background: linear-gradient(120deg, #4A90E2 0%, #357ABD 100%);
       color: white;
@@ -50,27 +65,36 @@
       margin-bottom: 2rem;
       position: relative;
       border-radius: 0 0 32px 32px;
-      box-shadow: 0 8px 32px rgba(74,144,226,0.10);
+      box-shadow: 0 8px 32px rgba(74, 144, 226, 0.10);
       animation: fadeIn 1.2s;
     }
+
     @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
     }
+
     .profile-pic {
       width: 130px;
       height: 130px;
       object-fit: cover;
       border-radius: 50%;
       border: 5px solid #fff;
-      box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.10);
       margin-bottom: 1rem;
       background: #eee;
       transition: transform 0.3s;
     }
+
     .profile-pic:hover {
       transform: scale(1.07) rotate(-3deg);
     }
+
     .cv-btn {
       display: inline-block;
       margin-top: 1rem;
@@ -80,28 +104,31 @@
       border-radius: 25px;
       font-weight: 600;
       border: none;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
       cursor: pointer;
       transition: background 0.2s, color 0.2s, transform 0.2s;
       text-decoration: none;
       font-size: 1.1em;
       letter-spacing: 0.5px;
     }
+
     .cv-btn:hover {
       background: linear-gradient(90deg, #357ABD 60%, #4A90E2 100%);
       color: #fff;
       transform: scale(1.05);
     }
+
     section {
       padding: 2.2rem 2rem;
       max-width: 950px;
       margin: auto;
       background: #fff;
       border-radius: 20px;
-      box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+      box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
       margin-bottom: 2.5rem;
       animation: fadeIn 1.2s;
     }
+
     h2 {
       color: #357ABD;
       margin-top: 0;
@@ -111,42 +138,59 @@
       padding-left: 0.7rem;
       margin-bottom: 1.2rem;
     }
-    .skills, .projects {
+
+    .skills,
+    .projects {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 1.2rem;
     }
+
     .card {
       background: linear-gradient(120deg, #f7fbff 60%, #eaf3fa 100%);
       padding: 1.4rem 1.1rem;
       border-radius: 16px;
-      box-shadow: 0 2px 12px rgba(74,144,226,0.09);
+      box-shadow: 0 2px 12px rgba(74, 144, 226, 0.09);
       transition: transform 0.22s, box-shadow 0.22s;
       border: 1px solid #e3eaf3;
       position: relative;
       overflow: hidden;
     }
+
     .card:hover {
       transform: translateY(-8px) scale(1.04) rotate(-1deg);
-      box-shadow: 0 8px 32px rgba(74,144,226,0.18);
+      box-shadow: 0 8px 32px rgba(74, 144, 226, 0.18);
       background: linear-gradient(120deg, #eaf3fa 60%, #f7fbff 100%);
     }
+
     .card h3 {
       margin-top: 0;
       color: #4A90E2;
       font-size: 1.2em;
     }
+
     .card:before {
       content: '';
       position: absolute;
-      top: -40px; right: -40px;
-      width: 80px; height: 80px;
+      top: -40px;
+      right: -40px;
+      width: 80px;
+      height: 80px;
       background: radial-gradient(circle, #4A90E2 0%, transparent 70%);
       opacity: 0.08;
       z-index: 0;
     }
-    .card > * { position: relative; z-index: 1; }
-    .card ul { margin: 0; padding-left: 1.2em; }
+
+    .card>* {
+      position: relative;
+      z-index: 1;
+    }
+
+    .card ul {
+      margin: 0;
+      padding-left: 1.2em;
+    }
+
     #interests ul {
       list-style: none;
       padding: 0;
@@ -156,16 +200,18 @@
       justify-content: center;
       font-size: 1.1em;
     }
+
     #interests li {
       background: #eaf3fa;
       border-radius: 18px;
       padding: 0.5em 1.2em;
-      box-shadow: 0 1px 4px rgba(74,144,226,0.07);
+      box-shadow: 0 1px 4px rgba(74, 144, 226, 0.07);
       margin-bottom: 0.5em;
       display: flex;
       align-items: center;
       gap: 0.5em;
     }
+
     footer {
       text-align: center;
       padding: 1.2rem;
@@ -176,30 +222,54 @@
       max-width: 950px;
       font-size: 1.1em;
       letter-spacing: 1px;
-      box-shadow: 0 2px 12px rgba(74,144,226,0.10);
+      box-shadow: 0 2px 12px rgba(74, 144, 226, 0.10);
     }
+
     a {
       color: #4A90E2;
       text-decoration: none;
       transition: color 0.2s;
     }
+
     a:hover {
       color: #357ABD;
     }
+
     @media (max-width: 700px) {
-      section { padding: 1rem; }
-      .skills, .projects { grid-template-columns: 1fr; }
-      nav { gap: 1rem; }
-      header { padding-top: 7rem; }
+      section {
+        padding: 1rem;
+      }
+
+      .skills,
+      .projects {
+        grid-template-columns: 1fr;
+      }
+
+      nav {
+        gap: 1rem;
+      }
+
+      header {
+        padding-top: 7rem;
+      }
     }
+
     @media (max-width: 500px) {
-      h2 { font-size: 1.3em; }
-      .profile-pic { width: 90px; height: 90px; }
+      h2 {
+        font-size: 1.3em;
+      }
+
+      .profile-pic {
+        width: 90px;
+        height: 90px;
+      }
     }
+
     .accordion-container {
       max-width: 900px;
       margin: 2rem auto;
     }
+
     .accordion {
       background-color: #f7fbff;
       color: #357ABD;
@@ -213,25 +283,30 @@
       font-weight: 600;
       border-radius: 12px;
       margin-bottom: 0.5rem;
-      box-shadow: 0 2px 8px rgba(74,144,226,0.07);
+      box-shadow: 0 2px 8px rgba(74, 144, 226, 0.07);
       transition: background 0.2s;
     }
-    .accordion.active, .accordion:hover {
+
+    .accordion.active,
+    .accordion:hover {
       background-color: #eaf3fa;
     }
+
     .panel {
       background: #fff;
       border-radius: 0 0 12px 12px;
-      box-shadow: 0 2px 8px rgba(74,144,226,0.04);
+      box-shadow: 0 2px 8px rgba(74, 144, 226, 0.04);
       max-height: 0;
       overflow: hidden;
       transition: max-height 0.3s ease;
       padding: 0 1.5rem;
       margin-bottom: 1.2rem;
     }
+
     .panel p {
       margin: 1.2rem 0;
     }
+
     .competence-cards {
       display: flex;
       flex-wrap: wrap;
@@ -239,6 +314,7 @@
       justify-content: center;
       margin-bottom: 2.5rem;
     }
+
     .competence-card {
       display: flex;
       flex-direction: column;
@@ -246,7 +322,7 @@
       justify-content: center;
       background: linear-gradient(120deg, #f7fbff 60%, #eaf3fa 100%);
       border-radius: 18px;
-      box-shadow: 0 2px 12px rgba(74,144,226,0.09);
+      box-shadow: 0 2px 12px rgba(74, 144, 226, 0.09);
       padding: 2rem 1.5rem 1.2rem 1.5rem;
       width: 220px;
       min-height: 180px;
@@ -260,13 +336,15 @@
       position: relative;
       overflow: visible;
     }
+
     .competence-card:hover {
       background: #eaf3fa;
       transform: translateY(-8px) scale(1.04);
-      box-shadow: 0 8px 32px rgba(74,144,226,0.18);
+      box-shadow: 0 8px 32px rgba(74, 144, 226, 0.18);
       border: 2px solid #4A90E2;
       cursor: pointer;
     }
+
     .competence-desc {
       display: none;
       position: absolute;
@@ -276,7 +354,7 @@
       background: #fff;
       color: #357ABD;
       border-radius: 12px;
-      box-shadow: 0 2px 12px rgba(74,144,226,0.13);
+      box-shadow: 0 2px 12px rgba(74, 144, 226, 0.13);
       padding: 1em 1.2em;
       width: 260px;
       z-index: 10;
@@ -285,130 +363,200 @@
       margin-top: 0.7em;
       text-align: left;
     }
+
     .competence-card:hover .competence-desc {
       display: block;
     }
+
     @media (max-width: 900px) {
-      .competence-desc { left: 50%; top: 110%; width: 90vw; max-width: 320px; }
+      .competence-desc {
+        left: 50%;
+        top: 110%;
+        width: 90vw;
+        max-width: 320px;
+      }
     }
   </style>
   <link rel="stylesheet" href="competences.css">
 </head>
+
 <body>
-    <nav>
-      <a href="#presentation">Présentation</a>
-      <a href="#competences">Compétences & SAÉ</a>
-      <a href="#pro">Monde professionnel</a>
-      <a href="#talents">Talents</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <header>
-      <h1>Rania - Étudiante en BUT Informatique</h1>
-      <div style="font-size:1.3em; font-weight:600; margin:1em 0; color:#ffe082; background:#357ABD; display:inline-block; padding:0.5em 1.5em; border-radius:30px; box-shadow:0 2px 8px rgba(0,0,0,0.10); letter-spacing:1px;">À la recherche d'une alternance en développement web !</div>
-      <p style="font-style: italic; font-size:1.2em; margin-bottom:0.5em; color:#ffe082;">"J’aime transformer les idées en solutions concrètes et utiles. Découvrez mon univers, mes projets, et ce qui me motive à innover chaque jour !"</p>
-      <p style="font-size:1.1em; color:#fff; margin-bottom:1.5em;">Curieuse, créative et déterminée à relever de nouveaux défis dans l’informatique.</p>
-      <a href="#contact" class="cv-btn" style="background:#ffe082; color:#222; margin-right:1em;">Me contacter</a>
-      <a href="cv_Alternance.pdf" class="cv-btn" download>Télécharger mon CV</a>    </header>
+  <nav>
+    <a href="#presentation">Présentation</a>
+    <a href="#competences">Compétences & SAÉ</a>
+    <a href="#pro">Monde professionnel</a>
+    <a href="#talents">Talents</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <header>
+    <h1>Rania - Étudiante en BUT Informatique</h1>
+    <div
+      style="font-size:1.3em; font-weight:600; margin:1em 0; color:#ffe082; background:#357ABD; display:inline-block; padding:0.5em 1.5em; border-radius:30px; box-shadow:0 2px 8px rgba(0,0,0,0.10); letter-spacing:1px;">
+      À la recherche d'une alternance en développement web !</div>
+    <p style="font-style: italic; font-size:1.2em; margin-bottom:0.5em; color:#ffe082;">"J’aime transformer les idées en
+      solutions concrètes et utiles. Découvrez mon univers, mes projets, et ce qui me motive à innover chaque jour !"
+    </p>
+    <p style="font-size:1.1em; color:#fff; margin-bottom:1.5em;">Curieuse, créative et déterminée à relever de nouveaux
+      défis dans l’informatique.</p>
+    <a href="#contact" class="cv-btn" style="background:#ffe082; color:#222; margin-right:1em;">Me contacter</a>
+    <a href="cv_Alternance.pdf" class="cv-btn" download>Télécharger mon CV</a>
+  </header>
 
-    <section id="presentation">
-      <h2>Présentation personnelle</h2>
-      <h3>Qui je suis</h3>
-      <p>Je m’appelle Rania, j’ai découvert l’informatique, un domaine qui me permet d’allier logique, créativité et impact concret. J’ai pris goût à cet univers, mais aussi à ce qu’il permet de construire. Fière de représenter la minorité féminine dans ce secteur, je me suis affirmée comme une personne responsable, persévérante et rigoureuse. Ce que j’aime particulièrement dans le développement, c’est cette capacité à transformer des idées parfois abstraites en solutions concrètes, utiles… et parfois même surprenantes.<br><span style="color:#357ABD;font-weight:500;">Envie d’en savoir plus ? Mon parcours et mes projets parlent d’eux-mêmes et vous montreront pourquoi je pourrais être un atout pour votre équipe… Bonne découverte !</span></p>
-      <h3>Mon parcours, évolutions et ambitions</h3>
-      <p>Quand je suis arrivée en BUT Informatique, j’aimais déjà ce domaine, sans vraiment savoir jusqu’où il pouvait me mener. Très vite, j’ai réalisé que l’informatique allait bien au-delà de ce que j’avais imaginé : ce n’était pas seulement un univers technique, mais aussi un espace d’expression, de logique et de rigueur.
-<br><br>
-Depuis le début du BUT, chaque semestre a marqué une étape dans ma progression : mes premières lignes de code ont laissé place à des projets concrets, et mes hésitations se sont transformées en prises d’initiative. Les SAÉ, les projets en binôme ou en groupe, les forums professionnels organisés à l’IUT, ainsi que les sorties dans des musées dédiés à l’informatique, m’ont permis de découvrir les métiers du web, mais aussi des aspects humains essentiels, comme la communication et la gestion de projet.
-<br><br>
-Toutes ces expériences ont confirmé mon envie de poursuivre mes études en école d’ingénieur ou en master, pour approfondir mes compétences, notamment en développement web ou en cybersécurité. Mon stage m’a également offert un premier aperçu du monde professionnel, avec ses exigences, mais aussi sa richesse humaine. J’y ai découvert ma capacité d’adaptation, mon sens de l’écoute et mon goût pour le travail en équipe.</p>
-    </section>
+  <section id="presentation">
+    <h2>Présentation personnelle</h2>
+    <h3>Qui je suis</h3>
+    <p style="color: #222;">Je m'appelle Rania, j'ai découvert l'informatique, un domaine qui me permet d'allier
+      logique, créativité et impact concret. J'ai pris goût à cet univers, mais aussi à ce qu'il permet de construire.
+      Fière de représenter la minorité féminine dans ce secteur, je me suis affirmée comme une personne responsable,
+      persévérante et rigoureuse. Ce que j'aime particulièrement dans le développement, c'est cette capacité à
+      transformer des idées parfois abstraites en solutions concrètes, utiles… et parfois même surprenantes.<br><span
+        style="color:#357ABD;font-weight:500;">Envie d'en savoir plus ? Mon parcours et mes projets parlent d'eux-mêmes
+        et vous montreront pourquoi je pourrais être un atout pour votre équipe… Bonne découverte !</span></p>
+    <h3>Mon parcours, évolutions et ambitions</h3>
+    <p style="color: #222;">Quand je suis arrivée en BUT Informatique, j'aimais déjà ce domaine, sans vraiment savoir
+      jusqu'où il pouvait me mener. Très vite, j'ai réalisé que l'informatique allait bien au-delà de ce que j'avais
+      imaginé : ce n'était pas seulement un univers technique, mais aussi un espace d'expression, de logique et de
+      rigueur.
+      <br><br>
+      Depuis le début du BUT, chaque semestre a marqué une étape dans ma progression : mes premières lignes de code ont
+      laissé place à des projets concrets, et mes hésitations se sont transformées en prises d’initiative. Les SAÉ, les
+      projets en binôme ou en groupe, les forums professionnels organisés à l’IUT, ainsi que les sorties dans des musées
+      dédiés à l’informatique, m’ont permis de découvrir les métiers du web, mais aussi des aspects humains essentiels,
+      comme la communication et la gestion de projet.
+      <br><br>
+      Toutes ces expériences ont confirmé mon envie de poursuivre mes études en école d’ingénieur ou en master, pour
+      approfondir mes compétences, notamment en développement web ou en cybersécurité. Mon stage m’a également offert un
+      premier aperçu du monde professionnel, avec ses exigences, mais aussi sa richesse humaine. J’y ai découvert ma
+      capacité d’adaptation, mon sens de l’écoute et mon goût pour le travail en équipe.
+    </p>
+  </section>
 
-    <section id="competences">
-      <h2>Bilan des compétences à partir des projet universitaires</h2>
-      <p style="text-align:center;font-size:1.1em;margin-bottom:2em;color:#357ABD;font-weight:500;">Cliquez sur chaque compétence pour comprendre mon évolution et les défis relevés.</p>
-      <div class="competence-cards">
-        <a href="competence-realiser.html" class="competence-card">
-          <span class="competence-icon">💻</span>
-          <span class="competence-title">Réaliser un développement d’application</span>
-          <span class="competence-desc">Concevoir, développer, tester et documenter une solution applicative à partir d’un besoin utilisateur. Ici, je montre comment je transforme une idée en application concrète, du cahier des charges au produit fini.</span>
-        </a>
-        <a href="competence-optimiser.html" class="competence-card">
-          <span class="competence-icon">⚡</span>
-          <span class="competence-title">Optimiser des applications informatiques</span>
-          <span class="competence-desc">Proposer et mettre en œuvre des solutions pour améliorer les performances, la qualité ou la maintenabilité d'une application. J’aime chercher comment rendre un projet plus efficace, plus rapide, et plus fiable.</span>
-        </a>
-        <a href="competence-administrer.html" class="competence-card">
-          <span class="competence-icon">🛠️</span>
-          <span class="competence-title">Administrer des systèmes informatiques</span>
-          <span class="competence-desc">Installer, configurer, sécuriser et maintenir des systèmes informatiques et des réseaux. Cette compétence m’a appris à organiser, sécuriser et maintenir l’infrastructure technique qui fait tourner les applications.</span>
-        </a>
-        <a href="competence-gerer.html" class="competence-card">
-          <span class="competence-icon">🗄️</span>
-          <span class="competence-title">Gérer des données de l’information</span>
-          <span class="competence-desc">Concevoir, mettre en place, interroger et exploiter des bases de données pour répondre à un besoin. J’ai appris à structurer, manipuler et valoriser les données pour en tirer le meilleur.</span>
-        </a>
-        <a href="competence-collaborer.html" class="competence-card">
-          <span class="competence-icon">🤝</span>
-          <span class="competence-title">Collaborer et piloter un projet</span>
-          <span class="competence-desc">Organiser, piloter un projet et travailler efficacement en équipe. Pour moi, c’est la clé pour avancer ensemble, partager les idées, s’adapter et réussir collectivement.</span>
-        </a>
+  <section id="competences">
+    <h2>Bilan des compétences à partir des projet universitaires</h2>
+    <p style="text-align:center;font-size:1.1em;margin-bottom:2em;color:#357ABD;font-weight:500;">Cliquez sur chaque
+      compétence pour comprendre mon évolution et les défis relevés.</p>
+    <div class="competence-cards">
+      <a href="competence-realiser.html" class="competence-card">
+        <span class="competence-icon">💻</span>
+        <span class="competence-title">Réaliser un développement d’application</span>
+        <span class="competence-desc">Concevoir, développer, tester et documenter une solution applicative à partir d’un
+          besoin utilisateur. Ici, je montre comment je transforme une idée en application concrète, du cahier des
+          charges au produit fini.</span>
+      </a>
+      <a href="competence-optimiser.html" class="competence-card">
+        <span class="competence-icon">⚡</span>
+        <span class="competence-title">Optimiser des applications informatiques</span>
+        <span class="competence-desc">Proposer et mettre en œuvre des solutions pour améliorer les performances, la
+          qualité ou la maintenabilité d'une application. J’aime chercher comment rendre un projet plus efficace, plus
+          rapide, et plus fiable.</span>
+      </a>
+      <a href="competence-administrer.html" class="competence-card">
+        <span class="competence-icon">🛠️</span>
+        <span class="competence-title">Administrer des systèmes informatiques</span>
+        <span class="competence-desc">Installer, configurer, sécuriser et maintenir des systèmes informatiques et des
+          réseaux. Cette compétence m’a appris à organiser, sécuriser et maintenir l’infrastructure technique qui fait
+          tourner les applications.</span>
+      </a>
+      <a href="competence-gerer.html" class="competence-card">
+        <span class="competence-icon">🗄️</span>
+        <span class="competence-title">Gérer des données de l’information</span>
+        <span class="competence-desc">Concevoir, mettre en place, interroger et exploiter des bases de données pour
+          répondre à un besoin. J’ai appris à structurer, manipuler et valoriser les données pour en tirer le
+          meilleur.</span>
+      </a>
+      <a href="competence-collaborer.html" class="competence-card">
+        <span class="competence-icon">🤝</span>
+        <span class="competence-title">Collaborer et piloter un projet</span>
+        <span class="competence-desc">Organiser, piloter un projet et travailler efficacement en équipe. Pour moi, c’est
+          la clé pour avancer ensemble, partager les idées, s’adapter et réussir collectivement.</span>
+      </a>
+    </div>
+    <!-- Sections détaillées pour chaque compétence (à remplir) -->
+    <div id="competence-realiser" style="margin-top:3em;"></div>
+    <div id="competence-optimiser" style="margin-top:3em;"></div>
+    <div id="competence-administrer" style="margin-top:3em;"></div>
+    <div id="competence-gerer" style="margin-top:3em;"></div>
+    <div id="competence-collaborer" style="margin-top:3em;"></div>
+  </section>
+
+  <section id="pro">
+    <h2>Découverte du monde professionnel</h2>
+    <p style="color: #222;"><b>À personnaliser :</b> Raconte ton expérience de stage ou d'alternance : environnement,
+      culture d'entreprise,
+      aspects marquants, travail en équipe, ce que tu as découvert sur toi-même.</p>
+    <!-- Exemple :
+      <p>Mon stage chez [Nom de l'entreprise] m'a permis de découvrir un environnement de travail stimulant, une culture d'entreprise axée sur l'innovation et la collaboration...</p>
+      -->
+    <div class="projet-card projet-flex" style="margin-top:2em;">
+      <div class="projet-info">
+        <h3>Conseils reçus de professionnels… et que je vous partage !</h3>
+        <p
+          style="font-style:italic;color:#357ABD;line-height:1.7;background:#eaf3fa;padding:1.1em 1.5em;border-radius:16px;box-shadow:0 2px 8px rgba(74,144,226,0.07);margin-bottom:1em;">
+          « Notez tout ce que vous faites durant vos stages, même les petits détails : ce sont eux qui montrent votre
+          progression. »<br>
+          « Restez curieux·se : suivez les évolutions technologiques, explorez les forums, assistez à des conférences.
+          La veille, c’est déjà de la formation. »<br>
+          « Il y a toujours quelque chose à apprendre, que vous soyez en entreprise, en freelance ou dans la recherche.
+          »<br>
+          « Osez sortir de votre zone de confort : c’est là que vous progressez le plus, même si ça fait peur au début.
+          »<br>
+          « Ce n’est pas grave de ne pas tout savoir. L’important, c’est de savoir poser les bonnes questions. »
+        </p>
+        <p style="margin-top:1em; color: #222;">
+          Ces phrases, recueillies lors d’échanges avec des professionnels (développeuse web chez Thales,
+          enseignant-chercheur à la Sorbonne…), m’accompagnent dans mon parcours. J’espère qu’elles vous inspireront
+          autant !
+        </p>
       </div>
-      <!-- Sections détaillées pour chaque compétence (à remplir) -->
-      <div id="competence-realiser" style="margin-top:3em;"></div>
-      <div id="competence-optimiser" style="margin-top:3em;"></div>
-      <div id="competence-administrer" style="margin-top:3em;"></div>
-      <div id="competence-gerer" style="margin-top:3em;"></div>
-      <div id="competence-collaborer" style="margin-top:3em;"></div>
-    </section>
+    </div>
+  </section>
 
-    <section id="pro">
-      <h2 style="font-size:1.5em;margin-bottom:1.2em;">Découverte du monde professionnel</h2>
-      <div class="pro-bloc-flex" style="display:block;margin-top:1em;">
-        <div class="pro-bloc" style="background:#f7fbff;border-radius:14px;box-shadow:0 1px 6px rgba(53,122,189,0.06);padding:1.2em 0.8em;margin-bottom:1.2em;display:flex;flex-direction:column;justify-content:center;align-items:center;transition:box-shadow 0.2s;">
-          <a href="stage.html" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;align-items:center;width:100%;">
-            <span style="font-size:2em;">💼</span>
-            <span style="font-size:1.05em;font-weight:700;margin:0.5em 0 0.2em 0;">Stage de 2<sup>ème</sup> année</span>
-            <span style="font-size:0.98em;color:#357ABD;font-weight:600;">Clique ici pour découvrir mon expérience de stage</span>
-          </a>
-        </div>
-        <div class="pro-bloc" style="background:#f7fbff;border-radius:14px;box-shadow:0 1px 6px rgba(53,122,189,0.06);padding:1.2em 0.8em;display:flex;flex-direction:column;justify-content:center;align-items:center;transition:box-shadow 0.2s;">
-          <span style="font-size:1.05em;font-weight:700;margin:0.5em 0 0.2em 0;">Conseils reçus de professionnels… et que je vous partage !</span>
-          <p style="font-style:italic;color:#357ABD;line-height:1.5;background:#eaf3fa;padding:0.7em 1em;border-radius:12px;box-shadow:0 1px 4px rgba(74,144,226,0.07);margin-bottom:0.7em;font-size:0.98em;">
-            « Notez tout ce que vous faites durant vos stages, même les petits détails : ce sont eux qui montrent votre progression. »<br>
-            « Restez curieux·se : suivez les évolutions technologiques, explorez les forums, assistez à des conférences. La veille, c’est déjà de la formation. »<br>
-            « Il y a toujours quelque chose à apprendre, que vous soyez en entreprise, en freelance ou dans la recherche. »<br>
-            « Osez sortir de votre zone de confort : c’est là que vous progressez le plus, même si ça fait peur au début. »<br>
-            « Ce n’est pas grave de ne pas tout savoir. L’important, c’est de savoir poser les bonnes questions. »
-          </p>
-          <p style="margin-top:0.7em;color:#666;font-size:0.95em;text-align:center;">Ces phrases, recueillies lors d’échanges avec des professionnels (développeuse web chez Thales, enseignant-chercheur à la Sorbonne…), m’accompagnent dans mon parcours. J’espère qu’elles vous inspireront autant !</p>
-        </div>
+  <section id="mise-en-avant-talents">
+    <h2>Mise en avant de mes talents</h2>
+    <div id="talents-preview" style="margin-bottom:1.5em;">
+      <p style="color: #222;">Je viens d'un bac STI2D, ce qui signifie que je n'ai pas eu l'occasion de faire beaucoup
+        de programmation ou de
+        développement au lycée, contrairement à ceux qui avaient choisi la spécialité NSI en filière générale. Pourtant,
+        j’ai su rattraper ce retard grâce à ma motivation et à ma capacité à apprendre vite. Je suis fière d’avoir
+        transformé chaque difficulté en opportunité, d’avoir progressé à l’oral et d’être devenue plus persévérante et
+        confiante.</p>
+      <div style="text-align:center;margin-top:1.5em;">
+        <a href="#" id="afficher-plus-talents"
+          onclick="document.getElementById('talents-full').style.display='block';this.style.display='none';document.getElementById('afficher-moins-talents').style.display='block';return false;"
+          style="font-weight:700;color:#357ABD;text-decoration:none;">Afficher plus</a>
       </div>
-    </section>
-
-    <section id="mise-en-avant-talents">
-      <h2>Mise en avant de mes talents</h2>
-         <div id="talents-preview" style="margin-bottom:1.5em;">
-        <p>Je viens d’un bac STI2D, ce qui signifie que je n’ai pas eu l’occasion de faire beaucoup de programmation ou de développement au lycée, contrairement à ceux qui avaient choisi la spécialité NSI en filière générale. Pourtant, j’ai su rattraper ce retard grâce à ma motivation et à ma capacité à apprendre vite. Je suis fière d’avoir transformé chaque difficulté en opportunité, d’avoir progressé à l’oral et d’être devenue plus persévérante et confiante.</p>
-        <div style="text-align:center;margin-top:1.5em;">
-          <a href="#" id="afficher-plus-talents" onclick="document.getElementById('talents-full').style.display='block';this.style.display='none';document.getElementById('afficher-moins-talents').style.display='block';return false;" style="font-weight:700;color:#357ABD;text-decoration:none;">Afficher plus</a>
-        </div>
+    </div>
+    <div id="talents-full" style="display:none;margin-bottom:1.5em;">
+      <p>Je suis fière d’avoir pu relever le défi que je m’étais fixé en intégrant le BUT Informatique. J’ai toujours su
+        m’adapter, rebondir et aller au bout de mes projets, même quand la solution n’était pas évidente. Cette force
+        m’a permis de progresser rapidement, de prendre confiance en moi et de prouver que la passion et la persévérance
+        peuvent compenser n’importe quel retard initial.<br><br>
+        J’ai également gagné en assurance grâce aux nombreux oraux que j’ai effectués durant mes deux années de BUT. Au
+        début, ces présentations étaient un vrai défi, mais avec du travail et de la pratique, j’ai appris à structurer
+        mes idées, gérer mon stress, et aujourd’hui, je me sens capable de défendre mes projets avec conviction.<br><br>
+        Je n’avais peut-être pas de prédisposition particulière pour l’informatique, mais j’ai fourni beaucoup d’efforts
+        et de travail, et je suis fière de ce que j’ai pu accomplir. Mais ce dont je suis le plus fière, c’est surtout
+        de la personne que je suis devenue grâce à ce parcours : plus persévérante, plus confiante, et toujours curieuse
+        d’apprendre et de progresser. Ce chemin m’a appris que la détermination et la régularité sont des clés
+        essentielles pour réussir, et c’est cette mentalité qui continue de me motiver chaque jour.</p>
+      <div style="text-align:center;margin-top:1.5em;">
+        <a href="#" id="afficher-moins-talents"
+          onclick="document.getElementById('talents-full').style.display='none';document.getElementById('afficher-plus-talents').style.display='inline-block';this.style.display='none';return false;"
+          style="font-weight:700;color:#357ABD;text-decoration:none;display:none;">Afficher moins</a>
       </div>
-      <div id="talents-full" style="display:none;margin-bottom:1.5em;">
-        <p>Je suis fière d’avoir pu relever le défi que je m’étais fixé en intégrant le BUT Informatique. J’ai toujours su m’adapter, rebondir et aller au bout de mes projets, même quand la solution n’était pas évidente. Cette force m’a permis de progresser rapidement, de prendre confiance en moi et de prouver que la passion et la persévérance peuvent compenser n’importe quel retard initial.<br><br>
-        J’ai également gagné en assurance grâce aux nombreux oraux que j’ai effectués durant mes deux années de BUT. Au début, ces présentations étaient un vrai défi, mais avec du travail et de la pratique, j’ai appris à structurer mes idées, gérer mon stress, et aujourd’hui, je me sens capable de défendre mes projets avec conviction.<br><br>
-        Je n’avais peut-être pas de prédisposition particulière pour l’informatique, mais j’ai fourni beaucoup d’efforts et de travail, et je suis fière de ce que j’ai pu accomplir. Mais ce dont je suis le plus fière, c’est surtout de la personne que je suis devenue grâce à ce parcours : plus persévérante, plus confiante, et toujours curieuse d’apprendre et de progresser. Ce chemin m’a appris que la détermination et la régularité sont des clés essentielles pour réussir, et c’est cette mentalité qui continue de me motiver chaque jour.</p>
-        <div style="text-align:center;margin-top:1.5em;">
-          <a href="#" id="afficher-moins-talents" onclick="document.getElementById('talents-full').style.display='none';document.getElementById('afficher-plus-talents').style.display='inline-block';this.style.display='none';return false;" style="font-weight:700;color:#357ABD;text-decoration:none;display:none;">Afficher moins</a>
-        </div>
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>📧 <a href="mailto:raniabousf@gmail.com">raniabousf@gmail.com</a> | 💼 <a href="https://www.linkedin.com/in/rania-bousfiha-b05393273?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">LinkedIn</a> | 👩‍💻 <a href="https://github.com/rania212">GitHub</a></p>
-    </section>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>📧 <a href="mailto:raniabousf@gmail.com">raniabousf@gmail.com</a> | 💼 <a
+        href="https://www.linkedin.com/in/rania-bousfiha-b05393273?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">LinkedIn</a>
+      | 👩‍💻 <a href="https://github.com/rania212">GitHub</a></p>
+  </section>
 
-    <footer>
-      <p>© 2025 Rania - Portfolio</p>
-    </footer>
-  </body>
+  <footer>
+    <p>© 2025 Rania - Portfolio</p>
+  </footer>
+</body>
+
 </html>
