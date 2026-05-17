@@ -283,24 +283,26 @@
           <li><b>Période :</b> Semestre 6, durée : ~1 mois, projet en groupe de 6.</li>
         </ul>
         <h3 style="margin-bottom:0.3em;">Ce que j’ai fait</h3>
-        <p>Nous avons créé une interface graphique en <b>Python</b> avec <b>Pygame</b> afin d’afficher le rendu du
+        <p>Nous avons créé une interface graphique en Python avec Pygame afin d’afficher le rendu du
           diagramme. J’ai participé au chargement des données (coordonnées), à leur stockage et à la transformation des
           points en “germes” (position + représentation graphique).
           <br><br>
-          Pour générer le diagramme, nous avons utilisé une méthode basée sur le <b>calcul de distance</b> : pour chaque
+          Pour générer le diagramme, nous avons utilisé une méthode basée sur le calcul de distance : pour chaque
           pixel de l’écran, on calcule la distance avec tous les points présents, puis on attribue la couleur du point
           le plus proche.
           <br><br>
-          Les points étaient stockés dans un fichier <b>JSON</b> pour faciliter les modifications, et nous avons ajouté
-          une fonctionnalité d’export en <b>image PNG</b> (palette de couleurs rendue plus cohérente pour améliorer la
+          Les points étaient stockés dans un fichier JSON pour faciliter les modifications, et nous avons ajouté
+          une fonctionnalité d’export en image PNG (palette de couleurs rendue plus cohérente pour améliorer la
           lisibilité).
+          <br><br>
+          Structure du projet : <i>phase1/</i> (dont <i>pointplan.json</i> et <i>voronoi.py</i>).
         </p>
         <h3 style="margin-bottom:0.3em;">Ce que j’ai appris</h3>
         <p>Cette SAÉ m’a appris à partir d’un sujet mathématique/théorique pour aller vers une visualisation concrète.
           J’ai aussi appris à manipuler des données externes (fichier JSON) et à construire une interface simple mais
-          fonctionnelle (chargement → calcul → rendu → export).
+          fonctionnelle.
           <br><br>
-          Nous avons également comparé nos implémentations avec des solutions proposées par des <b>IA</b> (logique de
+          Nous avons également comparé nos implémentations avec des solutions proposées par des IA (logique de
           calcul, pistes d’optimisation), ce qui m’a permis de mieux comprendre les choix techniques derrière chaque
           approche.
         </p>
@@ -309,7 +311,8 @@
           dans l’interface rendait les tests très concrets et motivants.</p>
         <h3 style="margin-bottom:0.3em;">Difficultés rencontrées et solutions mises en place</h3>
         <p>L’une des principales difficultés a été la partie algorithmique : il fallait comprendre les concepts
-          mathématiques derrière le diagramme et avancer progressivement.
+          mathématiques derrière le diagramme et avancer progressivement. Une autre limite importante était la
+          performance : le calcul “pixel par pixel” rendait l’exécution assez lente.
           <br><br>
           Nous avons testé régulièrement sur différents jeux de points, ajusté au fur et à mesure, et utilisé la
           comparaison avec des IA pour explorer d’autres manières de résoudre le problème quand nécessaire.
