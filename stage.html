@@ -84,16 +84,38 @@
     }
 
     .stage-photo {
-      flex: 1 1 320px;
-      max-width: 440px;
       width: 100%;
-      aspect-ratio: 4 / 3;
-      height: auto;
-      object-fit: contain;
       border-radius: 14px;
       border: 1px solid #e3eaf3;
       box-shadow: 0 2px 10px rgba(74, 144, 226, 0.10);
       background: #fff;
+    }
+
+    .stage-gallery--but2 .stage-photo {
+      flex: 1 1 320px;
+      max-width: 380px;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .stage-gallery--but3 {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+      justify-items: center;
+    }
+
+    .stage-gallery--but3 .stage-photo {
+      max-width: 440px;
+      aspect-ratio: 4 / 3;
+      height: auto;
+      object-fit: contain;
+    }
+
+    @media (max-width: 900px) {
+      .stage-gallery--but3 {
+        grid-template-columns: 1fr;
+      }
     }
 
     @media (max-width: 700px) {
@@ -108,7 +130,7 @@
   <div class="container">
     <a href="index.html#stages" class="back-link">← Retour au portfolio</a>
     <div class="stage-section stage-info" id="stage-but2">
-      <div class="stage-gallery" aria-label="Photos du stage BUT2">
+      <div class="stage-gallery stage-gallery--but2" aria-label="Photos du stage BUT2">
         <img src="image_stage_but2_1.png" alt="Photo du stage BUT2 (1)" class="stage-photo">
         <img src="image_stage_but2_2.png" alt="Photo du stage BUT2 (2)" class="stage-photo">
       </div>
@@ -262,7 +284,7 @@
     </div>
 
     <div class="stage-section stage-info" id="stage-but3">
-      <div class="stage-gallery" aria-label="Photos du stage BUT3">
+      <div class="stage-gallery stage-gallery--but3" aria-label="Photos du stage BUT3">
         <img src="stage_but3_1.png" alt="Photo du stage BUT3 (1)" class="stage-photo">
         <img src="stage_but3_2.png" alt="Photo du stage BUT3 (2)" class="stage-photo">
         <img src="stage_but3_3.png" alt="Photo du stage BUT3 (3)" class="stage-photo">
