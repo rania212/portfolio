@@ -144,21 +144,33 @@
         </ul>
         <h3 style="margin-bottom:0.3em;">Ce que j’ai fait</h3>
         <p>J’ai travaillé sur la structuration des données et leur préparation pour la recommandation. Nous avons
-          organisé les contenus (catégories, durée, nombre de personnes, difficulté, tags…) et transformé chaque
-          élément en représentation numérique (vecteurs) pour permettre la comparaison avec le profil utilisateur.
-          Nous avons aussi utilisé une base de données de type NoSQL, manipulée et structurée avec Hive, afin de gérer
-          les contenus de manière flexible.</p>
+          organisé les contenus (catégories, durée, nombre de personnes, difficulté, tags…) puis transformé ces
+          informations en représentations exploitables (notamment <b>vecteurs</b>) afin de comparer les contenus au
+          profil
+          utilisateur.
+          <br><br>
+          Le profil était construit à partir des interactions (likes / dislikes) et l’ensemble des données était stocké
+          en local, via une base de type NoSQL manipulée et structurée avec Hive.
+        </p>
         <h3 style="margin-bottom:0.3em;">Ce que j’ai appris</h3>
-        <p>Ce projet m’a appris à concevoir des données exploitables par un système de recommandation : choisir les bons
-          attributs, normaliser/encoder des informations (ex. one-hot), maintenir la cohérence des données et garder un
-          modèle simple à interroger. J’ai aussi mieux compris l’importance du “contexte” autour de la donnée : c’est la
-          manière de la structurer et de l’utiliser qui lui donne de la valeur.</p>
+        <p>Ce projet m’a appris à concevoir des données réellement exploitables par un système de recommandation :
+          choisir les bons attributs, normaliser/encoder (ex. one-hot), et maintenir la cohérence pour éviter des biais
+          ou des incohérences dans les résultats.
+          <br><br>
+          J’ai aussi compris l’importance de garder une structure commune quand on a plusieurs approches de
+          recommandation, afin que l’application reste cohérente de bout en bout.
+        </p>
         <h3 style="margin-bottom:0.3em;">Difficultés rencontrées et solutions mises en place</h3>
-        <p>Une difficulté a été de définir une structure de données suffisamment riche pour personnaliser la
-          recommandation, sans rendre le modèle trop complexe à maintenir. Nous avons rencontré des problèmes de
-          cohérence (valeurs manquantes, catégories pas uniformes) qui faussaient les résultats. Pour y faire face, nous
-          avons clarifié les règles de saisie, uniformisé les tags/attributs, et ajouté des vérifications avant de
-          générer les recommandations.</p>
+        <p>La difficulté a été de garder des données cohérentes alors que nous avions <b>3 algorithmes de
+            recommandation</b>
+          (et donc des besoins un peu différents) et que, côté équipe, nous n’avions pas tous les mêmes goûts. Sans une
+          structure commune, les résultats pouvaient varier de façon “bizarre” d’un algo à l’autre.
+          <br><br>
+          Pour stabiliser tout ça, nous avons uniformisé les attributs/tags, défini des règles claires (valeurs
+          attendues,
+          encodage), et ajouté des vérifications pour éviter les données manquantes ou incohérentes avant de lancer la
+          recommandation.
+        </p>
         <div class="projet-tags-inline">
           <span style="font-weight:600;margin-right:0.7em;">Compétence :</span>
           <span class="tag" style="background:#b2dfdb;color:#004d40;">NoSQL</span>
