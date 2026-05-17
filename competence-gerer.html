@@ -121,115 +121,133 @@
           <span class="tag tag-html">SQL</span>
           <span class="tag tag-css">MySQL Workbench</span>
           <span class="tag" style="background:#ffe082;color:#222;">draw.io</span>
-          <span class="tag" style="background:#c8e6c9;color:#256029;">dbdiagram.io</span>
-          <span class="tag" style="background:#f8bbd0;color:#880e4f;">phpMyAdmin</span>
+          puis génère et affiche un diagramme de Voronoï avec export en PNG.</li>
+          <li><b>Période :</b> Semestre 6, durée : ~1 mois, projet en groupe de 6.</li>
           <span class="niveau"
             style="background:#f7fbff;color:#357ABD;border-radius:16px;padding:0.4em 1em;font-size:0.98em;font-weight:500;margin-top:0.5em;box-shadow:0 1px 4px rgba(74,144,226,0.07);">Niveau
-            : ★★★☆☆</span>
+            <p>J’ai contribué à la partie import/gestion des données : chargement du fichier de points, stockage des
+              coordonnées et préparation des données pour le calcul (transformation en “germes”).
+              <br><br>
+              Les points étaient stockés dans un fichier <b>JSON</b>, ce qui permettait de modifier ou ajouter des
+              points
+              facilement sans changer le code, tout en gardant un format stable pour le traitement et l’affichage.
+            </p>
+            <div class="projet-card projet-flex">
+              <p>J’ai appris l’importance de définir un format clair (structure JSON) et de manipuler des données
+                externes de
+                manière rigoureuse. Une fois le format stabilisé, le reste du traitement devient plus simple à tester et
+                à
+                maintenir.
+                <br><br>
+                J’ai aussi compris que sur ce type d’application, la robustesse dépend beaucoup de la qualité des
+                entrées :
+                validation, gestion des cas limites et cohérence sont essentiels pour éviter des comportements
+                inattendus.
+              </p>
+              <li><b>Période :</b> Semestre 5 (3<sup>ème</sup> année de BUT Informatique), durée : 6 mois, projet en
+                groupe
+                de 5.</li>
+              <li><b>Lien :</b> <a href="https://github.com/GnanapragasamRoyston/SAE5-6" target="_blank">Voir le projet
+                  sur
+                  GitHub</a></li>
+              <p>Une difficulté a été d’anticiper les formats et les cas “imparfaits” (données mal formées, fichiers
+                incomplets, coordonnées hors plage, peu de points). Sans validation, l’interface pouvait échouer ou
+                afficher
+                un résultat incohérent.
+                <br><br>
+                Pour y faire face, nous avons stabilisé le format JSON, ajouté des vérifications et testé régulièrement
+                avec
+                des fichiers variés avant de lancer la génération.
+              </p>
+              utilisateur.
+              <br><br>
+              <span class="tag" style="background:#b2dfdb;color:#004d40;">JSON</span>
+              <span class="tag" style="background:#bbdefb;color:#0d47a1;">Import fichier</span>
+              <span class="tag" style="background:#ffe082;color:#222;">Validation</span>
+              <span class="tag" style="background:#c8e6c9;color:#256029;">Qualité</span>
+              <p>Ce projet m’a appris à concevoir des données réellement exploitables par un système de recommandation :
+                choisir les bons attributs, normaliser/encoder (ex. one-hot), et maintenir la cohérence pour éviter des
+                biais
+                ou des incohérences dans les résultats.
+                <br><br>
+                J’ai aussi compris l’importance de garder une structure commune quand on a plusieurs approches de
+                recommandation, afin que l’application reste cohérente de bout en bout.
+              </p>
+              <h3 style="margin-bottom:0.3em;">Difficultés rencontrées et solutions mises en place</h3>
+              <p>La difficulté a été de garder des données cohérentes alors que nous avions <b>3 algorithmes de
+                  recommandation</b>
+                (et donc des besoins un peu différents) et que, côté équipe, nous n’avions pas tous les mêmes goûts.
+                Sans une
+                structure commune, les résultats pouvaient varier de façon “bizarre” d’un algo à l’autre.
+                <br><br>
+                Pour stabiliser tout ça, nous avons uniformisé les attributs/tags, défini des règles claires (valeurs
+                attendues,
+                encodage), et ajouté des vérifications pour éviter les données manquantes ou incohérentes avant de
+                lancer la
+                recommandation.
+              </p>
+              <div class="projet-tags-inline">
+                <span style="font-weight:600;margin-right:0.7em;">Compétence :</span>
+                <span class="tag" style="background:#b2dfdb;color:#004d40;">NoSQL</span>
+                <span class="tag" style="background:#bbdefb;color:#0d47a1;">Hive</span>
+                <span class="tag" style="background:#ffe082;color:#222;">Data structuration</span>
+                <span class="tag" style="background:#c8e6c9;color:#256029;">Qualité</span>
+                <span class="niveau"
+                  style="background:#f7fbff;color:#357ABD;border-radius:16px;padding:0.4em 1em;font-size:0.98em;font-weight:500;margin-top:0.5em;box-shadow:0 1px 4px rgba(74,144,226,0.07);">Niveau
+                  : ★★★★☆</span>
+              </div>
+            </div>
         </div>
-      </div>
-    </div>
 
-    <div class="projet-card projet-flex">
-      <div class="projet-info">
-        <h2>Surpriz’Me — données et recommandation en local</h2>
-        <ul>
-          <li><b>Projet :</b> Application mobile de recommandation en local (films, jeux de société, activités).
-            L’objectif était de proposer des recommandations personnalisées à partir d’un profil utilisateur, sans
-            compte et sans connexion internet.</li>
-          <li><b>Période :</b> Semestre 5 (3<sup>ème</sup> année de BUT Informatique), durée : 6 mois, projet en groupe
-            de 5.</li>
-          <li><b>Lien :</b> <a href="https://github.com/GnanapragasamRoyston/SAE5-6" target="_blank">Voir le projet sur
-              GitHub</a></li>
-        </ul>
-        <h3 style="margin-bottom:0.3em;">Ce que j’ai fait</h3>
-        <p>J’ai travaillé sur la structuration des données et leur préparation pour la recommandation. Nous avons
-          organisé les contenus (catégories, durée, nombre de personnes, difficulté, tags…) puis transformé ces
-          informations en représentations exploitables (notamment <b>vecteurs</b>) afin de comparer les contenus au
-          profil
-          utilisateur.
-          <br><br>
-          Le profil était construit à partir des interactions (likes / dislikes) et l’ensemble des données était stocké
-          en local, via une base de type NoSQL manipulée et structurée avec Hive.
-        </p>
-        <h3 style="margin-bottom:0.3em;">Ce que j’ai appris</h3>
-        <p>Ce projet m’a appris à concevoir des données réellement exploitables par un système de recommandation :
-          choisir les bons attributs, normaliser/encoder (ex. one-hot), et maintenir la cohérence pour éviter des biais
-          ou des incohérences dans les résultats.
-          <br><br>
-          J’ai aussi compris l’importance de garder une structure commune quand on a plusieurs approches de
-          recommandation, afin que l’application reste cohérente de bout en bout.
-        </p>
-        <h3 style="margin-bottom:0.3em;">Difficultés rencontrées et solutions mises en place</h3>
-        <p>La difficulté a été de garder des données cohérentes alors que nous avions <b>3 algorithmes de
-            recommandation</b>
-          (et donc des besoins un peu différents) et que, côté équipe, nous n’avions pas tous les mêmes goûts. Sans une
-          structure commune, les résultats pouvaient varier de façon “bizarre” d’un algo à l’autre.
-          <br><br>
-          Pour stabiliser tout ça, nous avons uniformisé les attributs/tags, défini des règles claires (valeurs
-          attendues,
-          encodage), et ajouté des vérifications pour éviter les données manquantes ou incohérentes avant de lancer la
-          recommandation.
-        </p>
-        <div class="projet-tags-inline">
-          <span style="font-weight:600;margin-right:0.7em;">Compétence :</span>
-          <span class="tag" style="background:#b2dfdb;color:#004d40;">NoSQL</span>
-          <span class="tag" style="background:#bbdefb;color:#0d47a1;">Hive</span>
-          <span class="tag" style="background:#ffe082;color:#222;">Data structuration</span>
-          <span class="tag" style="background:#c8e6c9;color:#256029;">Qualité</span>
-          <span class="niveau"
-            style="background:#f7fbff;color:#357ABD;border-radius:16px;padding:0.4em 1em;font-size:0.98em;font-weight:500;margin-top:0.5em;box-shadow:0 1px 4px rgba(74,144,226,0.07);">Niveau
-            : ★★★★☆</span>
+        <div class="projet-card projet-flex">
+          <div class="projet-info">
+            <h2>SAÉ S6 — génération de diagrammes de Voronoï (données et validation)</h2>
+            <ul>
+              <li><b>Projet :</b> Application qui importe des coordonnées de points, vérifie automatiquement le format,
+                puis génère et affiche un diagramme de Voronoï avec export (SVG / PNG).</li>
+              <li><b>Période :</b> Semestre 6, durée : ~1 mois, projet en groupe de 5.</li>
+            </ul>
+            <h3 style="margin-bottom:0.3em;">Ce que j’ai fait</h3>
+            <p>J’ai contribué à la partie import/contrôle des données : lecture d’un fichier de points, vérification du
+              format attendu, et gestion de cas simples (ex. peu de points) pour éviter les erreurs.
+              <br><br>
+              En parallèle, j’ai participé à l’intégration avec l’affichage et l’export afin que les données importées
+              soient correctement réutilisées tout au long du traitement.
+            </p>
+            <h3 style="margin-bottom:0.3em;">Ce que j’ai appris</h3>
+            <p>J’ai appris que la robustesse d’une application dépend beaucoup de la qualité des entrées : contrôler,
+              valider et gérer les cas limites évite la majorité des comportements inattendus.
+              <br><br>
+              J’ai aussi renforcé ma rigueur sur la cohérence des données : une fois le format clarifié, tout le reste
+              du
+              traitement devient plus simple à tester et à maintenir.
+            </p>
+            <h3 style="margin-bottom:0.3em;">Ce que j’ai aimé</h3>
+            <p>J’ai aimé le côté concret du projet : partir d’un fichier de points et arriver à une visualisation
+              claire,
+              exportable, m’a permis de voir tout le cycle “données → traitement → rendu”.</p>
+            <h3 style="margin-bottom:0.3em;">Difficultés rencontrées et solutions mises en place</h3>
+            <p>Une difficulté a été d’anticiper les formats et les cas “imparfaits” (données mal formées, fichiers
+              incomplets). Sans validation, l’algorithme derrière le Voronoï pouvait échouer ou donner un résultat
+              incohérent.
+              <br><br>
+              Pour y faire face, nous avons défini un format clair, ajouté des vérifications, et testé régulièrement
+              avec
+              des fichiers variés pour sécuriser l’import avant de lancer la génération.
+            </p>
+            <div class="projet-tags-inline">
+              <span style="font-weight:600;margin-right:0.7em;">Compétence :</span>
+              <span class="tag" style="background:#ffe082;color:#222;">Validation</span>
+              <span class="tag" style="background:#c8e6c9;color:#256029;">Qualité</span>
+              <span class="tag" style="background:#bbdefb;color:#0d47a1;">Import fichier</span>
+              <span class="tag" style="background:#b2dfdb;color:#004d40;">Structures de données</span>
+              <span class="niveau"
+                style="background:#f7fbff;color:#357ABD;border-radius:16px;padding:0.4em 1em;font-size:0.98em;font-weight:500;margin-top:0.5em;box-shadow:0 1px 4px rgba(74,144,226,0.07);">Niveau
+                : ★★★★☆</span>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-
-    <div class="projet-card projet-flex">
-      <div class="projet-info">
-        <h2>SAÉ S6 — génération de diagrammes de Voronoï (données et validation)</h2>
-        <ul>
-          <li><b>Projet :</b> Application qui importe des coordonnées de points, vérifie automatiquement le format,
-            puis génère et affiche un diagramme de Voronoï avec export (SVG / PNG).</li>
-          <li><b>Période :</b> Semestre 6, durée : ~1 mois, projet en groupe de 5.</li>
-        </ul>
-        <h3 style="margin-bottom:0.3em;">Ce que j’ai fait</h3>
-        <p>J’ai contribué à la partie import/contrôle des données : lecture d’un fichier de points, vérification du
-          format attendu, et gestion de cas simples (ex. peu de points) pour éviter les erreurs.
-          <br><br>
-          En parallèle, j’ai participé à l’intégration avec l’affichage et l’export afin que les données importées
-          soient correctement réutilisées tout au long du traitement.
-        </p>
-        <h3 style="margin-bottom:0.3em;">Ce que j’ai appris</h3>
-        <p>J’ai appris que la robustesse d’une application dépend beaucoup de la qualité des entrées : contrôler,
-          valider et gérer les cas limites évite la majorité des comportements inattendus.
-          <br><br>
-          J’ai aussi renforcé ma rigueur sur la cohérence des données : une fois le format clarifié, tout le reste du
-          traitement devient plus simple à tester et à maintenir.
-        </p>
-        <h3 style="margin-bottom:0.3em;">Ce que j’ai aimé</h3>
-        <p>J’ai aimé le côté concret du projet : partir d’un fichier de points et arriver à une visualisation claire,
-          exportable, m’a permis de voir tout le cycle “données → traitement → rendu”.</p>
-        <h3 style="margin-bottom:0.3em;">Difficultés rencontrées et solutions mises en place</h3>
-        <p>Une difficulté a été d’anticiper les formats et les cas “imparfaits” (données mal formées, fichiers
-          incomplets). Sans validation, l’algorithme derrière le Voronoï pouvait échouer ou donner un résultat
-          incohérent.
-          <br><br>
-          Pour y faire face, nous avons défini un format clair, ajouté des vérifications, et testé régulièrement avec
-          des fichiers variés pour sécuriser l’import avant de lancer la génération.
-        </p>
-        <div class="projet-tags-inline">
-          <span style="font-weight:600;margin-right:0.7em;">Compétence :</span>
-          <span class="tag" style="background:#ffe082;color:#222;">Validation</span>
-          <span class="tag" style="background:#c8e6c9;color:#256029;">Qualité</span>
-          <span class="tag" style="background:#bbdefb;color:#0d47a1;">Import fichier</span>
-          <span class="tag" style="background:#b2dfdb;color:#004d40;">Structures de données</span>
-          <span class="niveau"
-            style="background:#f7fbff;color:#357ABD;border-radius:16px;padding:0.4em 1em;font-size:0.98em;font-weight:500;margin-top:0.5em;box-shadow:0 1px 4px rgba(74,144,226,0.07);">Niveau
-            : ★★★★☆</span>
-        </div>
-      </div>
-    </div>
-  </div>
 </body>
 
 </html>

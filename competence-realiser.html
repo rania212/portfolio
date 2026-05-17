@@ -277,39 +277,51 @@
       <div class="projet-info">
         <h2>SAÉ S6 — développement d’une application de génération de diagrammes de Voronoï</h2>
         <ul>
-          <li><b>Projet :</b> Application permettant d’importer un fichier de points (coordonnées), de générer le
-            diagramme de Voronoï associé, de l’afficher graphiquement et de l’exporter en PNG ou SVG.</li>
-          <li><b>Période :</b> Semestre 6, durée : ~1 mois, projet en groupe de 5.</li>
+          <li><b>Projet :</b> SAÉ du semestre 6 : réalisation d’une interface permettant de générer et visualiser un
+            diagramme de Voronoï à partir d’un fichier contenant une liste de points. L’utilisateur importe le fichier
+            de coordonnées et l’interface affiche automatiquement le diagramme correspondant.</li>
+          <li><b>Période :</b> Semestre 6, durée : ~1 mois, projet en groupe de 6.</li>
         </ul>
         <h3 style="margin-bottom:0.3em;">Ce que j’ai fait</h3>
-        <p>J’ai participé à la réalisation de l’application : import et validation du fichier, affichage des points,
-          génération/affichage du diagramme (arêtes, sommets) et export des résultats en SVG/PNG.
+        <p>Nous avons créé une interface graphique en <b>Python</b> avec <b>Pygame</b> afin d’afficher le rendu du
+          diagramme. J’ai participé au chargement des données (coordonnées), à leur stockage et à la transformation des
+          points en “germes” (position + représentation graphique).
           <br><br>
-          Pour la construction, nous avons utilisé une approche basée sur le lien entre <b>triangulation de Delaunay</b>
-          et <b>diagramme de Voronoï</b>, en calculant progressivement les éléments nécessaires à la visualisation.
+          Pour générer le diagramme, nous avons utilisé une méthode basée sur le <b>calcul de distance</b> : pour chaque
+          pixel de l’écran, on calcule la distance avec tous les points présents, puis on attribue la couleur du point
+          le plus proche.
+          <br><br>
+          Les points étaient stockés dans un fichier <b>JSON</b> pour faciliter les modifications, et nous avons ajouté
+          une fonctionnalité d’export en <b>image PNG</b> (palette de couleurs rendue plus cohérente pour améliorer la
+          lisibilité).
         </p>
         <h3 style="margin-bottom:0.3em;">Ce que j’ai appris</h3>
-        <p>J’ai appris à transformer un sujet géométrique très théorique en une application concrète et testable.
-          J’ai aussi renforcé mes compétences en algorithmique, en programmation orientée objet et en conception d’une
-          interface graphique orientée utilisateur (import, affichage clair, export).</p>
-        <h3 style="margin-bottom:0.3em;">Ce que j’ai aimé</h3>
-        <p>J’ai aimé la partie “découverte” : au départ le sujet était abstrait, puis il est devenu plus clair au fil
-          des expérimentations. Voir le diagramme se construire visuellement rendait les résultats très concrets et
-          motivants.</p>
-        <h3 style="margin-bottom:0.3em;">Difficultés rencontrées et solutions mises en place</h3>
-        <p>La difficulté principale a été de comprendre les concepts mathématiques et de gérer des cas géométriques
-          particuliers qui pouvaient donner des résultats inattendus.
+        <p>Cette SAÉ m’a appris à partir d’un sujet mathématique/théorique pour aller vers une visualisation concrète.
+          J’ai aussi appris à manipuler des données externes (fichier JSON) et à construire une interface simple mais
+          fonctionnelle (chargement → calcul → rendu → export).
           <br><br>
-          Nous avons avancé étape par étape, en testant régulièrement sur des jeux de points variés et en ajustant
-          l’implémentation à partir des observations et des échanges en équipe.
+          Nous avons également comparé nos implémentations avec des solutions proposées par des <b>IA</b> (logique de
+          calcul, pistes d’optimisation), ce qui m’a permis de mieux comprendre les choix techniques derrière chaque
+          approche.
+        </p>
+        <h3 style="margin-bottom:0.3em;">Ce que j’ai aimé</h3>
+        <p>J’ai aimé découvrir un sujet que je ne connaissais pas et voir un rendu visuel immédiat. La visualisation
+          dans l’interface rendait les tests très concrets et motivants.</p>
+        <h3 style="margin-bottom:0.3em;">Difficultés rencontrées et solutions mises en place</h3>
+        <p>L’une des principales difficultés a été la partie algorithmique : il fallait comprendre les concepts
+          mathématiques derrière le diagramme et avancer progressivement.
+          <br><br>
+          Nous avons testé régulièrement sur différents jeux de points, ajusté au fur et à mesure, et utilisé la
+          comparaison avec des IA pour explorer d’autres manières de résoudre le problème quand nécessaire.
         </p>
         <div class="projet-tags-inline">
           <span style="font-weight:600;margin-right:0.7em;">Compétence :</span>
-          <span class="tag" style="background:#ffe082;color:#222;">Algorithmique</span>
-          <span class="tag" style="background:#b2dfdb;color:#004d40;">Géométrie</span>
-          <span class="tag" style="background:#bbdefb;color:#0d47a1;">Interface graphique</span>
-          <span class="tag" style="background:#c8e6c9;color:#256029;">Import & validation</span>
-          <span class="tag" style="background:#e44d26;color:#fff;">SVG / PNG</span>
+          <span class="tag" style="background:#306998;color:#fff;">Python</span>
+          <span class="tag" style="background:#2e7d32;color:#fff;">Pygame</span>
+          <span class="tag" style="background:#b2dfdb;color:#004d40;">JSON</span>
+          <span class="tag" style="background:#ffe082;color:#222;">Calcul de distance</span>
+          <span class="tag" style="background:#e44d26;color:#fff;">Export PNG</span>
+          <span class="tag" style="background:#f8bbd0;color:#880e4f;">IA</span>
           <span class="niveau">Niveau : ★★★★☆</span>
         </div>
       </div>
